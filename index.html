@@ -4,7 +4,6 @@
     <link
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
       rel="stylesheet"
-      type="text/css"
     />
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
     <title>Todo App</title>
@@ -12,12 +11,12 @@
   <body>
     <article class="header">
       <img
-        class="header__img"
+        class="header-img"
         src="./eisenhower-matrix.jpg"
         alt="The eisenhower matrix"
       />
       <a
-        class="header__information-link"
+        class="header-information-link"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >
         Want more details?
@@ -25,56 +24,56 @@
     </article>
     <section class="main">
       <div class="new-task">
-        <label class="new-task__label" for="new-task">Add Item</label>
-        <div class="new-task__wrapper">
+        <label class="new-task-label" for="new-task">Add Item</label>
+        <div class="new-task-wrapper">
           <input
-            class="new-task__input"
+            class="new-task-input"
             id="new-task"
             class="task"
             type="text"
           />
-          <button class="new-task__add-btn">Add</button>
+          <button class="new-task-add-btn">Add</button>
         </div>
       </div>
-      <h3 class="tasks__title">Todo</h3>
-      <ul id="uncompleted-tasks__container">
+      <h3 class="tasks-title">Todo</h3>
+      <ul id="uncompleted-tasks-container">
         <li class="uncompleted-task">
-          <input class="task__checkbox" type="checkbox" />
-          <label class="task__label task">Pay Bills</label>
-          <input type="text" class="task__input task" />
-          <button class="edit-task__btn">Edit</button>
-          <button class="delete-task__btn">
+          <input class="task-checkbox" type="checkbox" />
+          <label class="task-label task">Pay Bills</label>
+          <input type="text" class="task-input task" />
+          <button class="edit-task-btn">Edit</button>
+          <button class="delete-task-btn">
             <img
-              class="delete-task__btn_img"
+              class="delete-task-btn-img"
               src="./remove.svg"
               alt="Delete task button"
             />
           </button>
         </li>
         <li class="uncompleted-task edit-mode">
-          <input class="task__checkbox" type="checkbox" />
-          <label class="task__label task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task__input task" />
-          <button class="edit-task__btn">Save</button>
-          <button class="delete-task__btn">
+          <input class="task-checkbox" type="checkbox" />
+          <label class="task-label task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task-input task" />
+          <button class="edit-task-btn">Save</button>
+          <button class="delete-task-btn">
             <img
-              class="delete-task__btn_img"
+              class="delete-task-btn-img"
               src="./remove.svg"
               alt="Delete task button"
             />
           </button>
         </li>
       </ul>
-      <h3 class="tasks__title">Completed</h3>
-      <ul id="completed-tasks__container">
+      <h3 class="tasks-title">Completed</h3>
+      <ul id="completed-tasks-container">
         <li class="completed-task">
-          <input class="task__checkbox" type="checkbox" checked />
-          <label class="task__label task">See the Doctor</label>
-          <input type="text" class="task__input task" />
-          <button class="edit-task__btn">Edit</button>
-          <button class="delete-task__btn">
+          <input class="task-checkbox" type="checkbox" checked />
+          <label class="task-label task">See the Doctor</label>
+          <input type="text" class="task-input task" />
+          <button class="edit-task-btn">Edit</button>
+          <button class="delete-task-btn">
             <img
-              class="delete-task__btn_img"
+              class="delete-task-btn-img"
               src="./remove.svg"
               alt="Delete task button"
             />

@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("uncompleted-tasks__container");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks__container");//completed-tasks
+var incompleteTaskHolder=document.getElementById("uncompleted-tasks-container");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("completed-tasks-container");//completed-tasks
 
 
 //New task list item
@@ -35,20 +35,20 @@ var createNewTaskElement=function(taskString){
     listItem.className = 'uncompleted-task';
 
     label.innerText=taskString;
-    label.className='task__label task';
+    label.className='task-label task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="task__checkbox";
+    checkBox.className="task-checkbox";
     editInput.type="text";
-    editInput.className="task__input task";
+    editInput.className="task-input task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit-task__btn";
+    editButton.className="edit-task-btn";
 
-    deleteButton.className="delete-task__btn";
+    deleteButton.className="delete-task-btn";
     deleteButtonImg.src='./remove.svg';
-    deleteButtonImg.className = 'delete-task__btn_img';
+    deleteButtonImg.className = 'delete-task-btn-img';
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -88,7 +88,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".edit-task__btn");
+    var editBtn=listItem.querySelector(".edit-task-btn");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
@@ -160,8 +160,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit-task__btn");
-    var deleteButton=taskListItem.querySelector("button.delete-task__btn");
+    var editButton=taskListItem.querySelector("button.edit-task-btn");
+    var deleteButton=taskListItem.querySelector("button.delete-task-btn");
 
 
     //Bind editTask to edit button.
